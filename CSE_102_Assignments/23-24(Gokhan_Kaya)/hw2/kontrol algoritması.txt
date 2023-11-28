@@ -1,0 +1,11 @@
+check pointerı ikilinin iki elemanını da geçici değişkenlere alsın
+
+sonra ilk elemandan, ilk elemanları tutan arrayde var mı baksın
+
+varsa, 
+    ikinci elemanları tutan ikinci arrayin aynı indeksinde, aynı ikinci eleman var mı diye baksın
+    varsa, aynı ikili daha önce arraylere kaydedilmiştir
+    o zaman arraylere bu aynı ikiliyi kaydetmek yerine ilgili ikilinin counterı bir artsın
+
+yoksa,
+    reader pointerı arraylere yeni ikiliyi kaydetsin

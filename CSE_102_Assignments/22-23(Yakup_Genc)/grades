@@ -1,0 +1,13 @@
+HW00: 100
+HW01: 100
+HW02: 95 (-5 for digit erro in S mode)
+HW03: 100
+HW04: 100
+HW05: 55 (wrong frequency calculation) (15 0 40)
+HW06: 85 (10 30 15 15 0 15)
+HW07: 60 (-20 for no ss) (40 20 20 0)
+HW08: 90 (-10 for no segmentation fault control) (50 30 10)
+HW09: 95 (30 15 40 10)
+HW10: 80 (10 10 10 20 10 0 20)
+HW11: 80 (40 0 40)
+HW12: 100
