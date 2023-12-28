@@ -91,8 +91,7 @@ void fillWCounts(FILE* reader, char* filename, float*** bigrams)
         
         row = fEl - 97;
         col = sEl - 97;
-        //printf("\n(%s)\nfEl: %d\nsEl: %d\n", filename, fEl, sEl);
-
+        
         if ((fEl == ' ' || fEl == '\n' || fEl == '\r') && (sEl != ' ' && sEl != '\n' && sEl != '\r')) //if fEl is (space OR newline) AND sEl is (not space OR not newline) 
         {
             (*bigrams)[CHARNUM - 1][col]++; //increase space-letter cell
@@ -184,7 +183,7 @@ float calcDiss(float** lang1, float** lang2)
 
 float myAbs(float num)
 { 
-    return (num < 0) ? -num : num;
+    return (num < 0) ? -num : num; //if less than 0 return -num, else return num itself
 }
 
 float** alloc2d(void)
@@ -199,7 +198,7 @@ float** alloc2d(void)
 
     for (int i = 0; i < CHARNUM; i++) 
     {
-        langc[i] = (float *)calloc(CHARNUM, sizeof(float));
+        langc[i] = (float *)calloc(CHARNUM, sizeof(float)); //then allocate every row
         
         if (langc[i] == NULL) 
         {
@@ -220,8 +219,8 @@ float** alloc2d(void)
 
 void dealloc2d(float ***matrix)
 {
-    for (int i = 0; i < CHARNUM; i++) free((*matrix)[i]);
-    free(*matrix);
+    for (int i = 0; i < CHARNUM; i++) free((*matrix)[i]); //first free every row
+    free(*matrix); //then free all
     *matrix = NULL;
 }
 
