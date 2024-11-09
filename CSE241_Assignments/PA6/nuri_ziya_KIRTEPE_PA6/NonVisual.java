@@ -1,0 +1,1 @@
+interface NonVisual extends Media {}

@@ -1,0 +1,1 @@
+interface Visual extends Media {}

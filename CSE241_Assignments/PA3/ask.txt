@@ -1,0 +1,12 @@
+class Student
+{
+    private:
+        
+        int course_counter;
+
+    public:
+
+        int& get_course_counter() { return &course_counter; }
+};
+
+return &course_counter; şu ifadede şu hatayı alıyorum: initial value of reference to non-const must be an lvalue

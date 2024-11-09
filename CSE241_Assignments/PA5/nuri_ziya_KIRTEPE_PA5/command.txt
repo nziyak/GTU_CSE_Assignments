@@ -1,0 +1,4 @@
+search "Islamic" in "style"
+sort "height_m"
+search "Basil's" in "title"
+search "Sydney" in "title"

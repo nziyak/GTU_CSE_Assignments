@@ -1,0 +1,10 @@
+*.json
+*.plist
+*.DS_Store
+*.exe
+*.out
+*.o
+*.a
+*.so
+*.dll
+*.bin

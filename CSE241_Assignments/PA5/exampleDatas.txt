@@ -1,0 +1,18 @@
+title:string:single|architect:string:multi|year:integer:single|style:string:multi
+Sydney Opera House|Jørn Utzon|1973|Expressionist:Modern
+Eiffel Tower|Gustave Eiffel|1889|Structural:Iron
+Taj Mahal|Ustad Ahmad Lahauri|1653|Mughal:Islamic
+Empire State Building|William F. Lamb|1931|Art Deco:Modern
+Burj Khalifa|Adrian Smith|2010|Modern:Postmodern
+Sagrada Família|Antoni Gaudí:Josep Maria Subirachs|2026|Modernisme:Gothic Revival
+Fallingwater|Frank Lloyd Wright|1939|Organic:Modern
+Petronas Towers|César Pelli|1998|Postmodern:Modern
+The Shard|Renzo Piano|2012|Neo-Futurism:Modern
+St. Basil's Cathedral|Postnik Yakovlev|1561|Russian:Gothic
+
+
+title:string:single|artist:string:multi|year:integer:single|genre:string:multi
+Professor Satchafunkilus and the Musterion of Rock|Joe Satriani|2008|Guitar Virtuoso
+Physical Graffiti|Led Zeppelin|1975|Rock
+Witchdoctor's Son|Okay Temiz:Johnny Dyani|2017|Jazz:Fusion
+Return Of The Mother Head's Family Reunion|Richie Kotzen|2007|Rock:Guitar Virtuoso

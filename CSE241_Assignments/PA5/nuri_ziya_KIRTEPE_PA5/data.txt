@@ -1,0 +1,12 @@
+title:string:single|architect:string:multi|year:integer:single|style:string:multi|location:string:single|height_m:double:single|materials:string:multi
+Sydney Opera House|Jørn Utzon|1973|Expressionist:Modern|Sydney, Australia|67.3|Concrete:Glass:Steel
+Eiffel Tower|Gustave Eiffel|1889|Structural:Iron|Paris, France|324.0|Wrought Iron
+Taj Mahal|Ustad Ahmad Lahauri|1653|Mughal:Islamic|Agra, India|73.0|Marble
+Empire State Building|William F. Lamb|1931|Art Deco:Modern|New York City, USA|381.0|Steel:Aluminum:Limestone
+Burj Khalifa|Adrian Smith|2010|Modern:Postmodern|Dubai, UAE|828.0|Reinforced Concrete:Glass:Steel
+Sydney Opera House|Jørn Utzon|1973|Expressionist:Modern|Sydney, Australia|67.3|Concrete:Glass:Steel
+Sagrada Família|Antoni Gaudí:Josep Maria Subirachs|2026|Modernisme:Gothic Revival|Barcelona, Spain|170.0|Stone:Concrete
+Fallingwater|Frank Lloyd Wright|1939|Organic:Modern|Mill Run, USA|17.0|Reinforced Concrete:Stone
+Petronas Towers|César Pelli|1998|Postmodern:Modern|Kuala Lumpur, Malaysia|452.0|Steel:Reinforced Concrete:Glass
+The Shard|Renzo Piano|2012|Neo-Futurism:Modern|London, UK|309.6|Glass:Steel
+St. Basil's Cathedral|Postnik Yakovlev|1561|Russian:Gothic|Moscow, Russia|47.5|Brick:Stone

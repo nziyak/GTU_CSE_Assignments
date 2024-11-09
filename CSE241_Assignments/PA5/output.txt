@@ -1,0 +1,24 @@
+title|architect|year|style|location|height_m|materials
+10 unique entries
+Exception: duplicate entry
+Sydney Opera House|Jørn Utzon|1973|Expressionist:Modern|Sydney, Australia|67.3|Concrete:Glass:Steel
+Exception: duplicate entry
+Sydney Opera House|Jørn Utzon|1973|Expressionist:Modern|Sydney, Australia|67.3|Concrete:Glass:Steel
+search "Islamic" in "style"
+Taj Mahal|Ustad Ahmad Lahauri|1653|Mughal:Islamic|Agra, India|73.0|Marble
+sort "height_m"
+Fallingwater|Frank Lloyd Wright|1939|Organic:Modern|Mill Run, USA|17.0|Reinforced Concrete:Stone
+St. Basil's Cathedral|Postnik Yakovlev|1561|Russian:Gothic|Moscow, Russia|47.5|Brick:Stone
+Sydney Opera House|Jørn Utzon|1973|Expressionist:Modern|Sydney, Australia|67.3|Concrete:Glass:Steel
+Taj Mahal|Ustad Ahmad Lahauri|1653|Mughal:Islamic|Agra, India|73.0|Marble
+Sagrada Família|Antoni Gaudí:Josep Maria Subirachs|2026|Modernisme:Gothic Revival|Barcelona, Spain|170.0|Stone:Concrete
+The Shard|Renzo Piano|2012|Neo-Futurism:Modern|London, UK|309.6|Glass:Steel
+Eiffel Tower|Gustave Eiffel|1889|Structural:Iron|Paris, France|324.0|Wrought Iron
+Empire State Building|William F. Lamb|1931|Art Deco:Modern|New York City, USA|381.0|Steel:Aluminum:Limestone
+Petronas Towers|César Pelli|1998|Postmodern:Modern|Kuala Lumpur, Malaysia|452.0|Steel:Reinforced Concrete:Glass
+Burj Khalifa|Adrian Smith|2010|Modern:Postmodern|Dubai, UAE|828.0|Reinforced Concrete:Glass:Steel
+search "Basil's" in "title"
+St. Basil's Cathedral|Postnik Yakovlev|1561|Russian:Gothic|Moscow, Russia|47.5|Brick:Stone
+search "Sydney" in "title"
+Sydney Opera House|Jørn Utzon|1973|Expressionist:Modern|Sydney, Australia|67.3|Concrete:Glass:Steel
+Sydney Opera House|Jørn Utzon|1973|Expressionist:Modern|Sydney, Australia|67.3|Concrete:Glass:Steel

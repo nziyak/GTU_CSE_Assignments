@@ -1,0 +1,130 @@
+işte diğer classlar, OptimusPrime Humanicten, Humanic de Robottan türüyor.
+
+class Robot
+{
+    friend class Arena;
+
+    public:    
+        
+        Robot();
+        Robot(Arena* arena, int X, int Y);
+        virtual ~Robot() { totalRobotsNum--; };
+        virtual int getType() = 0;
+        virtual int getStrength() = 0;
+        virtual int getHP() = 0;
+        virtual int getDamage(); // Returns amount of damage this robot inflicts in one round of combat
+        int isNearby(int X, int Y);
+        static int totalRobotsNum;
+
+    protected:    
+        
+        int x,y; //position
+        int strength;
+        int hp;
+        bool moved;
+        string name;
+        Arena* arena;
+};
+
+Robot::Robot()
+{
+    arena = nullptr;
+    moved = false;
+    strength = 0;
+    hp = 0;
+    x = 0;
+    y = 0;
+}
+
+Robot::Robot(Arena* arena, int X, int Y)
+{
+    this->arena = arena;
+    moved = false;
+    this->x=X;
+    this->y=Y;
+    arena->setAt(x,y,this);
+}
+
+int Robot::getDamage()
+{
+    return rand() % strength + 1;
+}
+
+class Humanic : public Robot
+{
+    friend class Arena;
+
+    public:
+        
+        Humanic(); 
+        Humanic(Arena* arena, int X, int Y);
+        virtual ~Humanic() { Robot::~Robot(); };
+
+        int getDamage();
+};
+
+Humanic::Humanic() : Robot()
+{   
+}
+
+Humanic::Humanic(Arena* arena, int X, int Y) : Robot(arena, X, Y)
+{
+}
+
+int Humanic::getDamage()
+{
+    int baseDamage = Robot::getDamage();
+
+    if(rand() % 10 == 0)
+        baseDamage += 50;
+
+    return baseDamage;
+}
+
+class OptimusPrime : public Humanic
+{
+    friend class Arena;
+
+    public:
+        
+        OptimusPrime();
+        OptimusPrime(Arena* arena, int X, int Y);
+        ~OptimusPrime() { Humanic::~Humanic(); };
+        int getDamage();
+        int getType() { return OPTIMUSPRIME; };
+        int getStrength() { return strength; };
+        int getHP() { return hp; };
+
+        static int numOP; //number of alive optimus primes
+};
+
+int OptimusPrime::numOP = 0;
+
+OptimusPrime::OptimusPrime() : Humanic()
+{ 
+    numOP++;
+    strength = OPTIMUSPRIME_STRENGTH;
+    hp = OPTIMUSPRIME_HP; 
+    name = "op" + to_string(numOP);
+}
+
+OptimusPrime::OptimusPrime(Arena* arena, int X, int Y) : Humanic(arena, X, Y)
+{
+    numOP++;
+    strength = OPTIMUSPRIME_STRENGTH;
+    hp = OPTIMUSPRIME_HP; 
+    name = "op" + to_string(numOP);
+}
+
+int OptimusPrime::getDamage()
+{
+    int baseDamage = Humanic::getDamage();
+
+    int isDouble = rand() % 101;   
+
+    if((0 < isDouble) && (isDouble < 16))
+        baseDamage *= 2; 
+
+    return baseDamage;
+}
+
